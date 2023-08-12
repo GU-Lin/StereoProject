@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1295</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_MainWindow">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>871</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>No Image</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Cam_on">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>71</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Camera On</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Cam_off">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>71</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Camera Off</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Exit">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>400</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_main_image">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>20</y>
+      <width>921</width>
+      <height>611</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Save_img">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>370</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Image</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Camera_OnOff">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>30</y>
+      <width>231</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Camera control</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_FieSetting">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>130</y>
+      <width>311</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>File Setting</string>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser_save_path">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Path_Set">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Path Set</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_File_Name">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Pattern&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_FileName_Set">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>121</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Image Name Set</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_file_format">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>40</y>
+       <width>86</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>.png</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>.jpg</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Parameter">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>350</y>
+      <width>141</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Parameter</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_Adjust">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Adjust</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>groupBox_FieSetting</zorder>
+   <zorder>groupBox_Camera_OnOff</zorder>
+   <zorder>textBrowser_main_image</zorder>
+   <zorder>label_MainWindow</zorder>
+   <zorder>pushButton_Cam_on</zorder>
+   <zorder>pushButton_Cam_off</zorder>
+   <zorder>pushButton_Exit</zorder>
+   <zorder>pushButton_Save_img</zorder>
+   <zorder>groupBox_Parameter</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1295</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMainWindow">
+    <property name="title">
+     <string>MainWindow</string>
+    </property>
+   </widget>
+   <addaction name="menuMainWindow"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
